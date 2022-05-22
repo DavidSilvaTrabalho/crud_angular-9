@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './components/header/header.component';
-
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list'
-import { MatToolbarModule } from "@angular/material/toolbar";
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
 
+import {MatCardModule} from '@angular/material/card'
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list'
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NavComponent } from './components/nav/nav.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { NavComponent } from './components/nav/nav.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

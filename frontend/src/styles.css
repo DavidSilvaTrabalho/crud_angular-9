@@ -1,18 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: rgba(224, 24, 24, 0.45)}
+html, body { height: 100%; background-color: #fff; color:red}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.red-color-font{
+.red-color{
     color: rgb(216, 39, 68)
 }
 
-.black-color-font{
-    color: black;
+.white-color{
+    color: #fff
 }
 
-.background-white{
-    background-color: #fff;
+.black-color{
+    color: rgba(0, 0, 0, 0.722);
+}
+
+.background{
+    background-color: #424242;
 }
 
 .v-middle{
