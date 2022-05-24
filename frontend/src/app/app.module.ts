@@ -15,6 +15,7 @@ import {MatListModule} from '@angular/material/list'
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { HomeComponent } from './components/pages/home/home.component';
 import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
+import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProductCrudComponent } from './components/pages/product-crud/product-cr
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
+    FooterDirectiveDirective
   ],
   imports: [
     BrowserModule,
@@ -32,9 +34,11 @@ import { ProductCrudComponent } from './components/pages/product-crud/product-cr
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    
   ],
-  providers: [],
+  exports: [FooterDirectiveDirective],
+  providers: [FooterDirectiveDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
