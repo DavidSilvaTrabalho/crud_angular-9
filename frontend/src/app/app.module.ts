@@ -9,14 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
 
-import {MatCardModule} from '@angular/material/card'
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list'
+import { MatCardModule } from '@angular/material/card'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule}  from '@angular/material/list'
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { HomeComponent } from './components/pages/home/home.component';
-import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
 import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
-import { ProductsComponent } from './components/products/products.component';
+import { MatButtonModule } from '@angular/material/button'
+import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
+import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,9 @@ import { ProductsComponent } from './components/products/products.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent,
     FooterDirectiveDirective,
-    ProductsComponent
+    ProductCrudComponent,
+    ProductsCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,7 @@ import { ProductsComponent } from './components/products/products.component';
     MatListModule,
     MatSidenavModule,
     MatCardModule,
-    
+    MatButtonModule
   ],
   exports: [FooterDirectiveDirective],
   providers: [FooterDirectiveDirective],
