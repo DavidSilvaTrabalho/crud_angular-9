@@ -13,9 +13,12 @@ import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule}  from '@angular/material/list'
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from '@angular/material/button'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatIconModule } from '@angular/material/icon';
+
 import { HomeComponent } from './components/pages/home/home.component';
 import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
-import { MatButtonModule } from '@angular/material/button'
 import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
 
@@ -38,7 +41,9 @@ import { ProductsCreateComponent } from './components/products/products-create/p
     MatListModule,
     MatSidenavModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    MatIconModule
   ],
   exports: [FooterDirectiveDirective],
   providers: [FooterDirectiveDirective],

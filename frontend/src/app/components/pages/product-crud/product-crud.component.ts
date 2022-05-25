@@ -13,7 +13,6 @@ export class ProductCrudComponent implements OnInit {
   }
 
   navigateToProductsCreate(): void{
-    console.log("navegando")
     this.router.navigate(['products/create'])
   }
 

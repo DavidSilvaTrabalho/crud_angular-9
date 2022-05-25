@@ -15,6 +15,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: rgba(0, 0, 0, 0.722);
 }
 
+.pink-color{
+    color:#c2185b
+}
+
 .background{
     background-color: #424242;
 }

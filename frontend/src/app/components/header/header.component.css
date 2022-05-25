@@ -26,3 +26,7 @@
 .header .title-group i{
     padding-right: 5px;
 }
+
+.title-group:nth-last-child(1){
+    cursor: pointer;
+}
