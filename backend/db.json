@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "products": [
     {
@@ -20,31 +19,21 @@
       "name": "Lapis Preto Básico",
       "price": "1.50",
       "id": 4
+    },
+    {
+      "name": "teste",
+      "price": 2,
+      "id": 5
+    },
+    {
+      "name": "teste",
+      "price": 2,
+      "id": 6
+    },
+    {
+      "name": "teste",
+      "price": 2,
+      "id": 7
     }
   ]
-=======
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000.89
-    },
-    {
-      "id": 3,
-      "name": "Sansung S20+ Ultra",
-      "price": "7520.89"
-    },
-    {
-      "name": "Lapis Preto Básico",
-      "price": "1.50",
-      "id": 4
-    }
-  ]
->>>>>>> 7bd8c37ddf8ceaa3969e53ee399ab1bb2fc09bfd
 }

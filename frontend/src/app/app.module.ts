@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
+import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,12 +19,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
-
-import { HomeComponent } from './components/pages/home/home.component';
-import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
-import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +33,7 @@ import { ProductsCreateComponent } from './components/products/products-create/p
     ProductsCreateComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
