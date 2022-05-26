@@ -10,8 +10,8 @@ import { Product } from '../../../interface/Product';
 export class ProductsCreateComponent implements OnInit {
 
   products: Product = {
-    name: 'teste',
-    price: 2
+    name: '',
+    price: null
   }
 
   constructor(private productService: ProductsService, private route:Router) { }

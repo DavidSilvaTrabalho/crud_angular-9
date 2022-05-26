@@ -34,6 +34,16 @@
       "name": "teste",
       "price": 2,
       "id": 7
+    },
+    {
+      "name": "teste de back",
+      "price": null,
+      "id": 8
+    },
+    {
+      "name": "teste de numero",
+      "price": 12,
+      "id": 9
     }
   ]
 }
