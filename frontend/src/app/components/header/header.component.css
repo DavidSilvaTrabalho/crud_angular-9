@@ -1,6 +1,9 @@
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #424242;
 }
 
 .header a {
@@ -14,8 +17,6 @@
     max-width: 200px;
 }
 
-
-
 .header .title-group{
     display: flex;
     align-items: center;
@@ -24,4 +25,8 @@
 
 .header .title-group i{
     padding-right: 5px;
+}
+
+.title-group:nth-last-child(1){
+    cursor: pointer;
 }

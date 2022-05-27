@@ -1,0 +1,14 @@
+.mat-card {
+    background: #fff;
+    color: #424242;
+}
+
+.title-card{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.title-sub-card{
+    font-size: 1.1rem;
+    color: #424242
+}

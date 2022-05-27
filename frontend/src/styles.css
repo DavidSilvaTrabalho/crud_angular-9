@@ -1,18 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: rgba(224, 24, 24, 0.45)}
+html, body { height: 100%; background-color: #fff; color:red}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.red-color-font{
-    color: rgb(216, 39, 68)
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.black-color-font{
-    color: black;
+p{
+    color: #424242;
 }
 
-.background-white{
-    background-color: #fff;
+.red-color{
+    color: #d72845
+}
+
+.white-color{
+    color: #fff
+}
+
+.black-color{
+    color: rgba(0, 0, 0, 0.722);
+}
+
+.pink-color{
+    color:#c2185b
+}
+
+.background{
+    background-color: #424242;
 }
 
 .v-middle{
