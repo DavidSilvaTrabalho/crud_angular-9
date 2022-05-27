@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
   "name": "backend",
   "version": "1.0.0",
@@ -14,20 +14,4 @@
     "json-server": "^0.16.1"
   }
 }
-=======
-{
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "json-server --watch db.json --port 3001"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "json-server": "^0.16.1"
-  }
-}
->>>>>>> 7bd8c37ddf8ceaa3969e53ee399ab1bb2fc09bfd
+

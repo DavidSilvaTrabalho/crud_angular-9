@@ -9,7 +9,7 @@ import { Product } from '../../interface/Product';
 })
 export class ProductsService {
 
-  apiBase = "http://localhost:3000/products"
+  apiBase = "http://localhost:3001/products"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
   
@@ -17,12 +17,17 @@ export class ProductsService {
     this.snackBar.open(msg, '', {
       duration: 3000,
       verticalPosition: 'top',
-      horizontalPosition: 'center'
+      horizontalPosition: 'right',
+      direction:"ltr"
     })
   }
 
   createProductOnBack(product: Product): Observable<Product>{
     return this.http.post<Product>(this.apiBase, product)
   }
+
+  readProductOnBack(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.apiBase)
+  }  
 
 }

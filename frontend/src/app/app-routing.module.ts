@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
-import { HomeComponent } from './components/pages/home/home.component';
+
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductCrudComponent } from './pages/product-crud/product-crud.component';
 
 
 

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
@@ -8,10 +9,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
-import { HomeComponent } from './components/pages/home/home.component';
-import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
-import { ProductCrudComponent } from './components/pages/product-crud/product-crud.component';
+import { ProductReadComponent } from './components/product-read/product-read.component'
+import { ProductCrudComponent } from './pages/product-crud/product-crud.component';
+import { HomeComponent } from './pages/home/home.component';
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
+
+import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -20,10 +23,12 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
-import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from "@angular/material/form-field"
-import { MatInputModule } from '@angular/material/input'
-
+import { MatInputModule } from '@angular/material/input';
+import { ProductRead2ExampleComponent } from './product-read2-example/product-read2-example.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,9 @@ import { MatInputModule } from '@angular/material/input'
     HomeComponent,
     FooterDirectiveDirective,
     ProductCrudComponent,
-    ProductsCreateComponent
+    ProductReadComponent,
+    ProductsCreateComponent,
+    ProductRead2ExampleComponent
   ],
   imports: [
     FormsModule,
@@ -50,10 +57,13 @@ import { MatInputModule } from '@angular/material/input'
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  exports: [FooterDirectiveDirective],
-  providers: [FooterDirectiveDirective],
+  exports: [],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

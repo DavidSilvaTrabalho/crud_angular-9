@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../products.service';
+import { ProductsService } from '../../../services/products-service/products.service';
 import { Router } from '@angular/router';
 import { Product } from '../../../interface/Product';
 @Component({
@@ -9,7 +9,7 @@ import { Product } from '../../../interface/Product';
 })
 export class ProductsCreateComponent implements OnInit {
 
-  products: Product = {
+  produtos: Product = {
     name: '',
     price: null
   }
@@ -21,12 +21,13 @@ export class ProductsCreateComponent implements OnInit {
   }
 
   createProduct():void {
-    this.productService.createProductOnBack(this.products).subscribe(
-      () => {
-        this.productService.showMessage("produto cadastro com sucesso!")
-        this.route.navigate(['/products'])
-      }
-    )
+    
+      this.productService.createProductOnBack(this.produtos).subscribe(
+        () => {
+          this.productService.showMessage("produto cadastro com sucesso!")
+          this.route.navigate(['/products'])
+        }
+      )
   }
 
   cancelProduct():void{

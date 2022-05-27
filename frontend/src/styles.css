@@ -2,9 +2,18 @@
 
 html, body { height: 100%; background-color: #fff; color:red}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: #424242;
+}
 
 .red-color{
-    color: hsl(350, 69%, 50%)
+    color: #d72845
 }
 
 .white-color{
