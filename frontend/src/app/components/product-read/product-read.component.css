@@ -1,3 +1,19 @@
 ul li {
     list-style-type: none;
 }
+
+table{
+    width: 100%;
+}
+
+.icon > i{
+    margin-right: 20px;
+    color: #c2185b;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c2185b;
+}

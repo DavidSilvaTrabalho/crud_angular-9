@@ -1,10 +1,19 @@
+.container{
+  margin: 0 20%;
+  padding: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+  -webkit-appearance: none;  
+}
+
+.btn-material{
+  margin-top: 20px;
 }
