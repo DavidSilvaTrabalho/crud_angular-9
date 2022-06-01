@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { ProductsService } from 'src/app/services/products-service/products.service';
 import { Product } from '../../interface/Product';
 
@@ -7,7 +7,7 @@ import { Product } from '../../interface/Product';
   templateUrl: './product-read.component.html',
   styleUrls: ['./product-read.component.css']
 })
-export class ProductReadComponent implements OnInit {
+export class ProductReadComponent implements OnInit, OnChanges {
 
   productsReadFromBack: Product[] = []
   displayedColumns = ['id', 'name', 'price', 'action']
@@ -20,4 +20,9 @@ export class ProductReadComponent implements OnInit {
     })
   }
 
+  ngOnChanges(): void {
+    this.productService.readProductOnBack().subscribe(itemRead => {
+      this.productsReadFromBack = itemRead
+    })
+  }
 }

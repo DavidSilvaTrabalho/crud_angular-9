@@ -1,39 +1,33 @@
-<!-- <ul>
-    <li class="red-color" *ngFor="let product of productsReadFromBack">
-        item: {{product.name}}, price: {{product.price}} 
-    </li>
-</ul> -->
-
 <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="productsReadFromBack">
+  <table mat-table [dataSource]="productsReadFromBack">
       <!-- Id Column -->
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        <td mat-cell *matCellDef="let products">{{products.id}}</td>
       </ng-container>
   
       <!-- Name Column -->
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        <td mat-cell *matCellDef="let products">{{products.name}}</td>
       </ng-container>
       
       <!-- Price Column -->
       <ng-container matColumnDef="price">
         <th mat-header-cell *matHeaderCellDef>Price</th>
-        <td mat-cell *matCellDef="let row">{{row.price | currency: 'BRL'}}</td>
+        <td mat-cell *matCellDef="let products">{{products.price | currency : 'BRL'}}</td>
       </ng-container>
 
       <!-- Action Column -->
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef>Action</th>
-        <td mat-cell *matCellDef="let row">
-          <a routerLink="" class="icon">
+        <td mat-cell *matCellDef="let products">
+          <a routerLink="/products/update/{{products.id}}" class="icon">
             <i class="material-icons">
               edit
             </i>
           </a>
-          <a routerLink="" class="icon">
+          <a routerLink="/products/delete/{{products.id}}" class="icon">
             <i class="material-icons">
               delete
             </i>
@@ -41,9 +35,14 @@
         </td>
       </ng-container>
 
-
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr mat-row *matRowDef="let roducts; columns: displayedColumns;"></tr>
     </table>
   </div>
-
+  
+  <!-- <ul>
+      <li class="red-color" *ngFor="let product of productsReadFromBack">
+          item: {{product.name}}, price: {{product.price}} 
+      </li>
+  </ul> -->
+  

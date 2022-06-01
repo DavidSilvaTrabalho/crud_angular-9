@@ -14,8 +14,6 @@ export class FooterDirectiveDirective implements OnInit {
   ngAfterViewInit(){}
   
   ngOnInit() {
-   console.log(this.testeN)
-   console.log("teste")
    this.el.nativeElement.color = '#d72845'
   }
 

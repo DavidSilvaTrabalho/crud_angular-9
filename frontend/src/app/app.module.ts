@@ -15,7 +15,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { ProductReadComponent } from './components/product-read/product-read.component'
 import { ProductCrudComponent } from './pages/product-crud/product-crud.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
+import { ProductsCreateComponent } from './components/products-create/products-create.component';
 
 import { FooterDirectiveDirective } from './components/footer/footer-directive.directive';
 
@@ -28,10 +28,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from "@angular/material/form-field"
 import { MatInputModule } from '@angular/material/input';
-import { ProductRead2ExampleComponent } from './product-read2-example/product-read2-example.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ProductsUpdateComponent } from './components/products-update/products-update.component';
+import { ProductDeleteComponent } from './components/product-delete/product-delete.component';
 
 registerLocaleData(localePt)
 @NgModule({
@@ -45,7 +46,8 @@ registerLocaleData(localePt)
     ProductCrudComponent,
     ProductReadComponent,
     ProductsCreateComponent,
-    ProductRead2ExampleComponent
+    ProductsUpdateComponent,
+    ProductDeleteComponent,
   ],
   imports: [
     FormsModule,

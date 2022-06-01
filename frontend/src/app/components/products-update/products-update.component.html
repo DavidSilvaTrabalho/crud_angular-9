@@ -1,0 +1,13 @@
+<mat-card class="container">
+    <mat-card-title>Edit Product</mat-card-title>
+    <form action="">
+        <mat-form-field>
+            <input required type="text" matInput placeholder="Nome" [(ngModel)]="itemFilteredById.name" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input required="true" type="text" matInput placeholder="Preço" [(ngModel)]="itemFilteredById.price" name="preco">
+        </mat-form-field>
+    </form>
+    <button class="btn-material" mat-raised-button color="primary" style="cursor: pointer;" (click)="saveUpdateProduct()">Salvar Edição</button>
+    <button class="btn-material" mat-button color="primary" style="cursor: pointer;" (click)="cancelEditProduct()">Cancel</button>
+</mat-card>
