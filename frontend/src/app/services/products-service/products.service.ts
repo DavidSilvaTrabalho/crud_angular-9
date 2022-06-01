@@ -31,7 +31,7 @@ export class ProductsService {
   }
 
   handleError(e: any):Observable<any>{
-    
+    console.log("erros encontrados: " + e.message)
     this.showMessage("Ocorreu um erro", true)
     return EMPTY
   }
